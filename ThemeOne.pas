@@ -1,8 +1,8 @@
-o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o
+{o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o}
 
-Theme One Source Code • MIT License
+{Theme One Source Code ï¿½ MIT License}
 
-o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o
+{o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o}
 
 { Theme/Theme 1/Theme One is licensed under the MIT License }
 { Copyright (c) 1984-2018 Jon Awbrey }
@@ -12,9 +12,9 @@ o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o
 {$M 53248,0,655360} { stack and heap   }
 {$B+} { boolean complete evaluation on }
 
-{ project: theme
-  segment: learner + modeler
-  version: 1
+{ project: theme}
+{ segment: learner + modeler}
+{ version: 1}
 
 program theme;
 
@@ -166,16 +166,20 @@ begin
  at := this;  gotoxy (col, row)
 end;
 
-function check (this: idea): idea;
-begin
- check := this;  write (memavail, ' bytes')
-end;
+{Comment out the check function.}
+{The memavail function has been removed from Pascal}
+{function check (this: idea): idea;}
+{begin}
+ {check := this;  write (memavail, ' bytes')}
+{end;}
 
-function memcheck (this: idea): idea;
-begin
- memcheck := at (1, 48, this);
- write ('< free memory : ', memavail : 8, ' bytes >')
-end;
+{Comment out the memcheck function}
+{The memavail function has been removed from Pascal}
+{function memcheck (this: idea): idea;}
+{begin}
+ {memcheck := at (1, 48, this);}
+ {write ('< free memory : ', memavail : 8, ' bytes >')}
+{end;}
 
 function upon (thus, that, this: idea): idea;
 var here: idea;
@@ -1135,8 +1139,12 @@ begin
  back := here
 end;
 
-function recall { (var thou: text;
-                       this: idea): idea };
+{function recall { (var thou: text;}
+                      {this: idea): idea };}
+
+{Remove the comments in the line below}
+function recall (var thou: text;
+                      this: idea): idea ;
 var here: idea;
 begin
  recall := this;
@@ -1575,8 +1583,11 @@ begin
  if lief (this) <> nil then here := clip (thou, sequel (this))
 end;
 
-function clip { (var thou: text;
-                     this: idea): idea };
+{function clip { (var thou: text;}
+                    {this: idea): idea };}
+{Remove comments in the tow lines below}
+function clip (var thou: text;
+                    this: idea): idea ;
 var here: idea;
 begin
  clip := this;
@@ -2143,8 +2154,10 @@ begin
      begin
       if catch ('sort', 'sort index', menu, thus) <> nil
        then here := wait (tort (resort (lex, lit, nil)))
-      else if catch ('check', 'check memory', menu, thus) <> nil
-       then here := hold (space (con, tort (check (nil))))
+
+      {else if catch ('check', 'check memory', menu, thus) <> nil}
+       {then here := hold (space (con, tort (check (nil))))}
+
       else if catch ('summary', 'write summary file', menu, thus) <> nil
        then here := hold (graft (lex, summary (pinch (lit))))
       else if catch ('show', 'show index', menu, thus) <> nil
@@ -2309,7 +2322,10 @@ begin
  twin := here
 end;
 
-function fake { (this: idea): idea };
+{function fake { (this: idea): idea };}
+
+{Remove comments in the line below}
+function fake (this: idea): idea ;
 var here, there: idea;
 begin
  here := nil;
@@ -2662,7 +2678,9 @@ begin
 end;
 
 begin { model }
- here := memcheck (nil);
+
+ {here := memcheck (nil);}
+
  if this <> nil then
   begin
    here := purpose (this);  there := ante (face (here));
@@ -2925,9 +2943,11 @@ begin { study }
            if prompt ('write can file') <> nil then i := outline (firm, i);
            if prompt ('write nac file') <> nil then i := reserve (i)
           end;
-         if permit ('recycle memory', lash (memcheck (clear (nil)))) <> nil
-         then i := hold (at (2, 48, memcheck (recycle (till (i)))))
+
+         {if permit ('recycle memory', lash (memcheck (clear (nil)))) <> nil}
+         {then i := hold (at (2, 48, memcheck (recycle (till (i)))))}
         end;
+
        if permit ('sense', clear (nil)) <> nil then
         begin
          i := turn (purpose (till (now)));
@@ -2971,19 +2991,19 @@ begin { flint }
 end;
 
 begin { theme }
- freemin := 4096;     size := 25;        trim := 40;
+ {freemin := 4096;}     size := 25;        trim := 40;
  assigncrt (con);     reset (con);       rewrite (con);
  checkbreak := true;  checkeof := true;  video (firm);
  here := clean (flint (nil));            close (con)
 end.
 
-o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o
+{o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o}
 
-Theme One is licensed under the MIT License.
+{Theme One is licensed under the MIT License.}
 
-Copyright (c) 1984-2018 Jon Awbrey
+{Copyright (c) 1984-2018 Jon Awbrey}
 
-Permission is hereby granted, free of charge, to any person
+{Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
 files (the "Software"), to deal in the Software without restriction,
 including without limitation the rights to use, copy, modify, merge,
@@ -3000,6 +3020,6 @@ MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.}
 
-o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o
+{o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o~~~~~~~~~o}

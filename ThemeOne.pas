@@ -1506,7 +1506,7 @@ begin
  here := nil;
  if this = nil then
   begin
-   if prompt ('read lex file') <> nil then
+   if prompt ('Read Lex File') <> nil then
     begin
      here := clave (thou, this);
      if here = nil then
@@ -1543,10 +1543,17 @@ function frame (term: info;
                 this: idea): idea;
 var here: idea;
     thou: text;
+    termContent: string;
 begin
  here := nil;
  if this <> nil then
-  if prompt ('read '+ term +' file') <> nil then
+ termContent := term;
+ termContent[1] := UpCase(termContent[1]);
+
+
+  {if prompt ('Read '+ term +' File') <> nil then}
+
+  if prompt ('Read '+ termContent +' File') <> nil then
    begin
     here := clave (thou, here);
     if here = nil then

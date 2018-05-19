@@ -2976,7 +2976,7 @@ end;
 begin { order }
  order := this;
  here := nil;  flag := nil;  menu := nil;  venu := nil;
- here := just (turn (brush (1, 54, buff ('< load menu files first >'))));
+ here := just (turn (brush (1, 54, buff ('< Load Menu Files First >'))));
  venu := stage (here);  menu := fore (venu);
  if venu <> nil then
   begin

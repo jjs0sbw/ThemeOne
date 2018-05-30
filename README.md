@@ -10,3 +10,7 @@ https://drive.google.com/open?id=19K2pwRKXlrs_sGNyv1g4RAwx5IyDGp_j
 The Theme One Program link contains a minimal set of files for running the program.
 
 The Theme One Guide link contains all the example files mentioned in the User Guide.
+
+Detailed Theme One commentary is available at:
+
+http://intersci.ss.uci.edu/wiki/index.php/Theme_One_Program_%E2%80%A2_Commentary_2005
